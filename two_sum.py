@@ -28,7 +28,7 @@ def two_sum_pairs(numbers, target):
         j = i + 1
         for j in range(i + 1):
             if numbers[i] + numbers[j] == target:
-                result.append({numbers[i], numbers[j]})
+                result.append({numbers[i],numbers[j]})
 
     return result
 

@@ -23,8 +23,15 @@ def two_sum_pairs(numbers, target):
     
     # When you are ready with your code make sure to return your list! This is so the autograder can grade!
     # return ExampleListName
+    result = []
+    for i in range(numbers):
+        for j in range(i + 1):
+            if numbers[i] + numbers[j] == target:
+                result.append({numbers[i], numbers[j]})
+
+    return result
 
 # Test cases - you can run this file directly to test your function!
 if __name__ == "__main__":
-
+    two_sum_pairs([1, 2, 3, 4], 5)
 

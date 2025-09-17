@@ -25,6 +25,7 @@ def two_sum_pairs(numbers, target):
     # return ExampleListName
     result = []
     for i in range(numbers):
+        j = i + 1
         for j in range(i + 1):
             if numbers[i] + numbers[j] == target:
                 result.append({numbers[i], numbers[j]})
